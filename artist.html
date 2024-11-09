@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Profile</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .container {
+      width: 85%;
+      margin: 20px auto;
+    }
+
+    /* Artist Profile Styles */
+    .artist-profile {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .artist-profile:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .artist-profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .artist-info h2 {
+      font-size: 24px;
+      color: #333;
+    }
+    .artist-info p {
+      font-size: 16px;
+      color: #555;
+      margin: 10px 0;
+    }
+    .artist-info h3 {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .artist-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .artist-info ul li {
+      margin: 5px 0;
+    }
+    .artist-info ul li a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    .artist-info ul li a:hover {
+      color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Art Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="artworks.html">Artworks</a>
+      <a href="message.html">Message</a>
+    </nav>
+  </header>
+
+  <!-- Artist Profile Section -->
+  <div class="container artist-profile">
+    <img src="OIP.jpg" alt="Antony Profile Picture">
+    <div class="artist-info">
+      <h2>Antony</h2>
+      <p><strong>About:</strong> Digital Art Worker</p>
+      <h3>Artworks:</h3>
+      <ul>
+        <li><a href="artwork-details.html">Nature's Beauty</a></li>
+        <li><a href="artwork-details.html">Urban Sunset</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container artist-profile">
+    <img src="oip2.jpg" alt="John Profile Picture">
+    <div class="artist-info">
+      <h2>John</h2>
+      <p><strong>About:</strong> Professional Oil Painter</p>
+      <h3>Artworks:</h3>
+      <ul>
+        <li><a href="artwork-details.html">Majestic Mountains</a></li>
+        <li><a href="artwork-details.html">Ocean Waves</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Art Gallery. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

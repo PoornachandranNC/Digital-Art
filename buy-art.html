@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Art - DigiArt</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .container {
+      width: 85%;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .artwork-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .artwork-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    .artwork-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .artwork-info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .artwork-info h2 {
+      color: #333;
+      font-size: 28px;
+    }
+    .artwork-info p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .artwork-info strong {
+      color: #333;
+    }
+    .price {
+      font-size: 24px;
+      color: #007bff;
+      margin: 20px 0;
+    }
+    .buy-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .buy-form input, .buy-form select {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .buy-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .buy-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Buy Art - DigiArt</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="artworks.html">Artworks</a>
+      <a href="artist.html">Artist profiles</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Buy Art Section -->
+  <div class="container">
+    <div class="artwork-details">
+      <!-- Artwork Image -->
+      <div class="artwork-image">
+        <img src="art1.jpg" alt="Artwork Image">
+      </div>
+
+      <!-- Artwork Info -->
+      <div class="artwork-info">
+        <h2>Nature's Beauty</h2>
+        <p><strong>Artist:</strong> Antony</p>
+        <p><strong>Type:</strong> Oil Painting</p>
+        <p><strong>Size:</strong> 24x36 inches</p>
+        <p><strong>Description:</strong> A stunning representation of nature's beauty, captured through a delicate and vibrant palette. The painting brings the essence of nature into any space, evoking a peaceful and harmonious atmosphere.</p>
+        <p class="price"><strong>Price:</strong> $500</p>
+      </div>
+    </div>
+
+    <!-- Purchase Form -->
+    <div class="buy-form">
+      <h3>Purchase This Art</h3>
+      <form action="purchase.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="address" placeholder="Shipping Address" required>
+        <select name="payment-method" required>
+          <option value="" disabled selected>Select Payment Method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+        <button type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 DigiArt. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Global Styles */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+  }
+  .button-class{
+    size: 100dp;;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Artworks Section */
+  .artwork-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .artwork-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .artwork-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .artwork-card .info {
+    padding: 15px;
+  }
+  
+  .artwork-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .artwork-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Artist Profile */
+  .artist-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .artist-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+  }
+  
+  .artist-info {
+    max-width: 600px;
+  }
+  
+  .artist-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .artist-info p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Message Page */
+  .message-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .message-form input,
+  .message-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .message-form button:hover {
+    background-color: #444;
+  }
+  
